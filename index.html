@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Libro de recetas</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navigation">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navigation__menu" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link navigation--color active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navigation--color" href="#libro">Libro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navigation--color" href="#about">Sobre Mí</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navigation--color" href="#testimonios">Testimonios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navigation--color" href="#reservas">Reservas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="hero">
+            <div class="hero__content container">
+              <h1 class="hero__title">Recetas caseras y fáciles</h1>
+              <h2 class="hero__subtitle">Cocina con lo que tenes en casa</h2>
+            </div> 
+            <div class="wave" >
+              <svg viewBox="0 0 500 150" preserveAspectRatio="none"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg>
+            </div>
+          </div>
+          
+    </header>
+    <main class="container mt-0" id="libro">
+      <h2 class="subtitle mt-0">Sobre el libro</h2>
+      <div class="flex">
+        <img class="flex__image" src="./img/book.jpg" alt="Libro de cocina: Cocina Facil de Amanda Fler" loading="lazy">
+        <div class="flex__text">
+          <p class="flex__par justified">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eum reiciendis praesentium recusandae necessitatibus quisquam. Iusto sequi delectus magni, temporibus tempora modi dolore dolorem in deleniti, reprehenderit, sint odit ipsam!
+          In incidunt doloribus voluptates perspiciatis necessitatibus facere nobis non temporibus voluptatibus exercitationem repudiandae.
+          </p>
+          <button class="flex__btn">Reservar ahora</button>
+      </div>
+      </div>
+    </main>
+    <section id="recetas" class="bg-color">
+      <h2 class="subtitle">Recetas</h2>
+      <p class="text-center text">Aprende de la manera más fácil a preparar estos platos y muchos mas.</p>
+      <div class="galery container">
+        <div class="galery__grid">
+          <div class="galery__content" onclick="zoomIn(1)">
+            <img class="galery__img" src="./img/food1.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
+            <div class="galery__hover">
+              <i class="bi bi-zoom-in"></i>
+            </div>
+          </div>
+          <div class="galery__content" onclick="zoomIn(2)">
+            <img class="galery__img" src="./img/food2.jpg" alt="Las recetas que encontraras en el libro"  loading="lazy">
+            <div class="galery__hover">
+              <i class="bi bi-zoom-in"></i>
+            </div>
+          </div>
+          <div class="galery__content" onclick="zoomIn(3)">
+            <img class="galery__img" src="./img/food3.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
+            <div class="galery__hover">
+              <i class="bi bi-zoom-in"></i>
+            </div>
+          </div>
+          <div class="galery__content" onclick="zoomIn(4)">
+            <img class="galery__img" src="./img/food4.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
+            <div class="galery__hover">
+              <i class="bi bi-zoom-in"></i>
+            </div>
+          </div>
+          <div class="galery__content" onclick="zoomIn(5)">
+            <img class="galery__img" src="./img/food5.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
+            <div class="galery__hover">
+              <i class="bi bi-zoom-in"></i>
+            </div>
+          </div>
+          <div class="galery__content" onclick="zoomIn(6)">
+            <img class="galery__img" src="./img/food6.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
+            <div class="galery__hover">
+              <i class="bi bi-zoom-in"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Hover Effect -->
+        <div id="zoom"></div>
+        <div id="close-btn"></div>
+      </div>
+    </section>
+    <section class="container" id="about">
+      <h2 class="subtitle">Sobre Mí</h2>
+      <div class="flex">
+        <p class="flex__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad rem vitae vero modi esse fugit consectetur omnis corrupti magnam, nesciunt ut quae saepe voluptatibus hic eligendi, laboriosam, iure sapiente id?
+          Repellendus dignissimos, eum quos pariatur dolore expedita nemo esse, incidunt asperiores soluta placeat ab similique doloribus iste hic. Exercitationem, ab magni minima explicabo voluptas repellendus sint dignissimos assumenda. Nobis, quo!
+          Non dolorem maiores rem asperiores. Eos quod optio accusantium blanditiis sunt cupiditate culpa iste molestias esse, totam consequatur, in obcaecati odit reiciendis architecto. Nostrum eum nihil, voluptatem quis labore blanditiis.</p>
+          <img class="flex__image" src="./img/amanda.jpg" alt="">
+      </div>
+    </section>
+    <section class="bg-color" id="testimonios">
+      <div class="container">
+        <h2 class="subtitle">Testimonios</h2>
+        <!-- carousel -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner testimonios">
+            <div class="carousel-item active">
+              <div class="testimonios__card">
+                <img  class="testimonios__img" src="./img/ed.jpg"  loading="lazy">
+                <div class="testimonios__content">
+                  <blockquote><p class="testimonios__text justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo alias asperiores quisquam cum velit iure. Veniam corrupti, veritatis dicta hic sit, quidem impedit dignissimos aliquam optio, expedita sed eveniet.
+                  Vel ab aliquid sint animi dolore officia? Expedita alias veritatis non et. Dolores cupiditate officia consectetur necessitatibus quasi eveniet fugit voluptate doloribus vel at. Voluptate enim deserunt ipsa iste ipsum.</p></blockquote>
+                  <p class="testimonios__name">Edit, 43 años</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonios__card">
+                <img  class="testimonios__img" src="./img/pat.jpg" alt="">
+                <div class="testimonios__content">
+                  <blockquote><p class="testimonios__text justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo alias asperiores quisquam cum velit iure. Veniam corrupti, veritatis dicta hic sit, quidem impedit dignissimos aliquam optio, expedita sed eveniet.
+                  Vel ab aliquid sint animi dolore officia? Expedita alias veritatis non et. Dolores cupiditate officia consectetur necessitatibus quasi eveniet fugit voluptate doloribus vel at. Voluptate enim deserunt ipsa iste ipsum.</p></blockquote>
+                  <p class="testimonios__name">Pato, 18 años</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonios__card">
+                <img  class="testimonios__img" src="./img/ga.jpg" loading="lazy">
+                <div class="testimonios__content">
+                  <blockquote><p class="testimonios__text justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo alias asperiores quisquam cum velit iure. Veniam corrupti, veritatis dicta hic sit, quidem impedit dignissimos aliquam optio, expedita sed eveniet.
+                  Vel ab aliquid sint animi dolore officia? Expedita alias veritatis non et. Dolores cupiditate officia consectetur necessitatibus quasi eveniet fugit voluptate doloribus vel at. Voluptate enim deserunt ipsa iste ipsum.</p></blockquote>
+                  <p class="testimonios__name">Gala, 30 años</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon left-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon right-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="reservas">
+      <h2 class="subtitle">Hacé tu reserva</h2>
+      <form enctype="text/plain" action="" method="">
+          <label for="name">Nombre: </label>
+          <input type="text" id="name" name="name" placeholder="Juan" required>
+          <label for="email">E-mail: </label>
+          <input type="email" id="email" name="email" placeholder="juana@mail.com" required>
+          <label for="message">Mensaje:</label>
+          <textarea name="message" id="message" cols="30" rows="5" placeholder="Opcional"></textarea>
+          <input class="flex__btn" type="submit" value="RESERVAR">
+      </form>
+    </section>
+    <footer>
+      <div class="container">
+        <p class="footer__text">Recetas de cocina - <span>Amanda Fler</span></p>
+        <p class="footer__copy">Diseño y desarrollo: Valeria Silveira | <a href="valeriasilveira.com.ar">valeriasilveira.com.ar</a></p>
+      </div>
+    </footer>
+
+    <div class="backToTop"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
