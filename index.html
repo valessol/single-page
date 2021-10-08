@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="./build/css/style.css" as="style">
+    <link rel="stylesheet" href="./build/css/style.css">
     <title>Libro de recetas</title>
 </head>
 <body>
@@ -46,7 +47,7 @@
     <main class="container mt-0" id="libro">
       <h2 class="subtitle mt-0">Sobre el libro</h2>
       <div class="flex">
-        <img class="flex__image" src="./img/book.jpg" alt="Libro de cocina: Cocina Facil de Amanda Fler" loading="lazy">
+        <img class="flex__image" src="./build/img/book.jpg" alt="Libro de cocina: Cocina Facil de Amanda Fler" loading="lazy">
         <div class="flex__text">
           <p class="flex__par justified">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eum reiciendis praesentium recusandae necessitatibus quisquam. Iusto sequi delectus magni, temporibus tempora modi dolore dolorem in deleniti, reprehenderit, sint odit ipsam!
           In incidunt doloribus voluptates perspiciatis necessitatibus facere nobis non temporibus voluptatibus exercitationem repudiandae.
@@ -61,37 +62,37 @@
       <div class="galery container">
         <div class="galery__grid">
           <div class="galery__content" onclick="zoomIn(1)">
-            <img class="galery__img" src="./img/food1.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
+            <img class="galery__img" src="./build/img/food1.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
             <div class="galery__hover">
               <i class="bi bi-zoom-in"></i>
             </div>
           </div>
           <div class="galery__content" onclick="zoomIn(2)">
-            <img class="galery__img" src="./img/food2.jpg" alt="Las recetas que encontraras en el libro"  loading="lazy">
+            <img class="galery__img" src="./build/img/food2.jpg" alt="Las recetas que encontraras en el libro"  loading="lazy">
             <div class="galery__hover">
               <i class="bi bi-zoom-in"></i>
             </div>
           </div>
           <div class="galery__content" onclick="zoomIn(3)">
-            <img class="galery__img" src="./img/food3.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
+            <img class="galery__img" src="./build/img/food3.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
             <div class="galery__hover">
               <i class="bi bi-zoom-in"></i>
             </div>
           </div>
           <div class="galery__content" onclick="zoomIn(4)">
-            <img class="galery__img" src="./img/food4.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
+            <img class="galery__img" src="./build/img/food4.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
             <div class="galery__hover">
               <i class="bi bi-zoom-in"></i>
             </div>
           </div>
           <div class="galery__content" onclick="zoomIn(5)">
-            <img class="galery__img" src="./img/food5.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
+            <img class="galery__img" src="./build/img/food5.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
             <div class="galery__hover">
               <i class="bi bi-zoom-in"></i>
             </div>
           </div>
           <div class="galery__content" onclick="zoomIn(6)">
-            <img class="galery__img" src="./img/food6.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
+            <img class="galery__img" src="./build/img/food6.jpg" alt="Las recetas que encontraras en el libro" loading="lazy">
             <div class="galery__hover">
               <i class="bi bi-zoom-in"></i>
             </div>
@@ -108,7 +109,7 @@
         <p class="flex__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad rem vitae vero modi esse fugit consectetur omnis corrupti magnam, nesciunt ut quae saepe voluptatibus hic eligendi, laboriosam, iure sapiente id?
           Repellendus dignissimos, eum quos pariatur dolore expedita nemo esse, incidunt asperiores soluta placeat ab similique doloribus iste hic. Exercitationem, ab magni minima explicabo voluptas repellendus sint dignissimos assumenda. Nobis, quo!
           Non dolorem maiores rem asperiores. Eos quod optio accusantium blanditiis sunt cupiditate culpa iste molestias esse, totam consequatur, in obcaecati odit reiciendis architecto. Nostrum eum nihil, voluptatem quis labore blanditiis.</p>
-          <img class="flex__image" src="./img/amanda.jpg" alt="">
+          <img class="flex__image" src="./build/img/amanda.jpg" alt="">
       </div>
     </section>
     <section class="bg-color" id="testimonios">
@@ -119,7 +120,7 @@
           <div class="carousel-inner testimonios">
             <div class="carousel-item active">
               <div class="testimonios__card">
-                <img  class="testimonios__img" src="./img/ed.jpg"  loading="lazy">
+                <img  class="testimonios__img" src="./build/img/ed.jpg"  loading="lazy">
                 <div class="testimonios__content">
                   <blockquote><p class="testimonios__text justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo alias asperiores quisquam cum velit iure. Veniam corrupti, veritatis dicta hic sit, quidem impedit dignissimos aliquam optio, expedita sed eveniet.
                   Vel ab aliquid sint animi dolore officia? Expedita alias veritatis non et. Dolores cupiditate officia consectetur necessitatibus quasi eveniet fugit voluptate doloribus vel at. Voluptate enim deserunt ipsa iste ipsum.</p></blockquote>
@@ -129,7 +130,7 @@
             </div>
             <div class="carousel-item">
               <div class="testimonios__card">
-                <img  class="testimonios__img" src="./img/pat.jpg" alt="">
+                <img  class="testimonios__img" src="./build/img/pat.jpg" alt="">
                 <div class="testimonios__content">
                   <blockquote><p class="testimonios__text justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo alias asperiores quisquam cum velit iure. Veniam corrupti, veritatis dicta hic sit, quidem impedit dignissimos aliquam optio, expedita sed eveniet.
                   Vel ab aliquid sint animi dolore officia? Expedita alias veritatis non et. Dolores cupiditate officia consectetur necessitatibus quasi eveniet fugit voluptate doloribus vel at. Voluptate enim deserunt ipsa iste ipsum.</p></blockquote>
@@ -139,7 +140,7 @@
             </div>
             <div class="carousel-item">
               <div class="testimonios__card">
-                <img  class="testimonios__img" src="./img/ga.jpg" loading="lazy">
+                <img  class="testimonios__img" src="./build/img/ga.jpg" loading="lazy">
                 <div class="testimonios__content">
                   <blockquote><p class="testimonios__text justified">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo alias asperiores quisquam cum velit iure. Veniam corrupti, veritatis dicta hic sit, quidem impedit dignissimos aliquam optio, expedita sed eveniet.
                   Vel ab aliquid sint animi dolore officia? Expedita alias veritatis non et. Dolores cupiditate officia consectetur necessitatibus quasi eveniet fugit voluptate doloribus vel at. Voluptate enim deserunt ipsa iste ipsum.</p></blockquote>
@@ -183,6 +184,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="./javascript/script.js"></script>
+    <script src="./build/js/bundle.min.js"></script>
 </body>
 </html>

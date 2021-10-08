@@ -1,5 +1,9 @@
 node_modules
+package.json
 package-lock.json
-css/style.scss
-css/_variables.scss
-css/style.css.map
+gulpfile.js
+src
+postcss.config.js
+build/css/style.css.map
+build/js/bundle.js
+build/js/bundle.js.min.map
